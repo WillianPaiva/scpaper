@@ -34,7 +34,7 @@
     "mhchem"
     "minted")
    (LaTeX-add-labels
-    "sec:org7ce1743"
-    "sec:orgd775ea3"))
+    "sec:org203da34"
+    "sec:orge928c76"))
  :latex)
 

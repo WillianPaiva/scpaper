@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{class} \PYG{n+nc}{Calculate}\PYG{o}{\PYGZob{}}
+    \PYG{n}{Calculate}\PYG{o}{()\PYGZob{}\PYGZcb{};}
+    \PYG{n}{Void} \PYG{n+nf}{HeavyCalc}\PYG{o}{()\PYGZob{}} \PYG{n}{someHeavyCalc}\PYG{o}{();\PYGZcb{}}
+    \PYG{n}{Layer} \PYG{n}{batWarning} \PYG{o}{\PYGZob{}}
+        \PYG{k+kt}{void} \PYG{n+nf}{HeavyCalc}\PYG{o}{()\PYGZob{}}
+            \PYG{n}{sendNotification}\PYG{o}{(}\PYG{l+s}{\PYGZdq{} Warning Low Battery level\PYGZdq{}}\PYG{o}{);}
+            \PYG{n}{proceed}\PYG{o}{();}
+        \PYG{o}{\PYGZcb{}}
+    \PYG{o}{\PYGZcb{}}
+    \PYG{n}{Layer} \PYG{n}{lowMemory} \PYG{o}{\PYGZob{}}
+        \PYG{k+kt}{void} \PYG{n+nf}{HeavyCalc}\PYG{o}{()\PYGZob{}}
+            \PYG{n}{sendNotification}\PYG{o}{(}\PYG{l+s}{\PYGZdq{}Not enough memory to execute\PYGZdq{}}\PYG{o}{);}
+            \PYG{k}{throw} \PYG{k}{new} \PYG{n}{NotEnoughtMemoryException}\PYG{o}{();}
+        \PYG{o}{\PYGZcb{}}
+    \PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

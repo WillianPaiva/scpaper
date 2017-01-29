@@ -24,7 +24,7 @@
 
 
 ** Context and behavior variants
-   COP subdivide the Context into 3 categories:
+   COP subdivides the Context into 3 categories:
 *** Actor 
     Ex: Function or methods call, messages ...
 *** Environment 
@@ -32,14 +32,6 @@
 *** System 
     Ex: Methods, objects, subsystems ...
 
-** Layers
-
-   + First-class entities
-   + Activation and deactivation
-     - Arbitrary parts of the code
-     - Conditional (environment) 
-   + Scope
-     - executes the code on the scope in or out the layer   
 
 ** Multi-dimensional message dispatch
 
@@ -56,6 +48,16 @@
 
 *** three dimension (Subject-oriented programming) 
     [[./three.png]]
+
+
+** Layers
+*** Definitions
+   + First-class entities
+   + Activation and deactivation
+     - Arbitrary parts of the code
+     - Conditional (environment) 
+   + Scope
+     - executes the code on the scope in or out the layer
 
 ** Multi-dimensional message dispatch
 
@@ -98,9 +100,7 @@
     }
     #+END_SRC
 
-* Conclusions
-
-** Crosscutting-concerns 
+* Related Solutions
 
 ** Decorator pattern
 
@@ -108,23 +108,35 @@
     :PROPERTIES:
     :BEAMER_ENV: block
     :END:
-    - Attach additional responsibilities to an object dynamically.
-    - Can withdrawn responsibilities.
+
+    - Can withdrawn responsibilities.(???)
     - Add behavior or state to individual objects at run-time.
 
-*** One difference                                      :B_block:
+*** Cons                                                            :B_block:
     :PROPERTIES:
     :BEAMER_ENV: block
     :END:
-    - Activation and deactivation of the functionnalities of subclasses.
+    
+    - With COP it is possible to activate and deactivate layers with a simpler syntax.
+
+*** Pros                                                            :B_block:
+    :PROPERTIES:
+    :BEAMER_ENV: block
+    :END:
+    - By using the decorator pattern a class don't need to know/declare future /"decorations"/.
+
 
 
 ** Aspect-oriented programming
 
-*** Dealing with crosscutting-concerns                                      :B_block:
+*** Advantages over COP                                             :B_block:
     :PROPERTIES:
     :BEAMER_ENV: block
     :END:
-    - Well define the outer contexts.
     - Decrease code scattering by a static way of programming.
-    - Be integrated in more and more mainstream languages.
+    - The class has no knowledge of the aspects. 
+    - Provides similar functionalities with (/pointcut/, /after/ and /before/).
+    - Integrated in many more languages like Java and C++.
+
+** Q&A 
+  [[./qa.jpg]] 

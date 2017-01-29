@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Calculate} \PYG{n}{c} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Calculate}\PYG{o}{();}
+\PYG{k}{if}\PYG{o}{(}\PYG{n}{SystemMemory}\PYG{o}{()} \PYG{o}{\PYGZlt{}} \PYG{n}{mimMem}\PYG{o}{)\PYGZob{}}
+    \PYG{n}{with}\PYG{o}{(}\PYG{n}{lowMemory}\PYG{o}{)\PYGZob{}}
+        \PYG{n}{c}\PYG{o}{.}\PYG{n+na}{HeavyCalc}\PYG{o}{();}
+    \PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}\PYG{k}{else} \PYG{k}{if}\PYG{o}{(}\PYG{n}{BatteryLevel}\PYG{o}{()} \PYG{o}{\PYGZlt{}} \PYG{n}{mimBat}\PYG{o}{)\PYGZob{}}
+    \PYG{n}{with}\PYG{o}{(}\PYG{n}{batWarning}\PYG{o}{)\PYGZob{}}
+        \PYG{n}{c}\PYG{o}{.}\PYG{n+na}{HeavyCalc}\PYG{o}{();}
+    \PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}\PYG{k}{else}\PYG{o}{\PYGZob{}}
+    \PYG{n}{c}\PYG{o}{.}\PYG{n+na}{HeavyCalc}\PYG{o}{();}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}
