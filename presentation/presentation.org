@@ -100,6 +100,17 @@
 
 * Conclusions
 
-** Decorator 
-** Aspect-oriented programming
 ** Crosscutting-concerns 
+
+** Decorator 
+
+** Aspect-oriented programming
+
+*** Dealing with crosscutting-concerns                                      :B_block:
+    :PROPERTIES:
+    :BEAMER_ENV: block
+    :END:
+    - Well define the outer contexts.
+    - Tackle /crosscutting-concerns/.
+    - Decrease code scattering by a static way of programming.
+    - Be integrated in more and more mainstream languages.
