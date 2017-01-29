@@ -1,0 +1,122 @@
+% Created 2017-01-29 Sun 10:19
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[version=3]{mhchem}
+\usepackage{minted}
+\usetheme{Madrid}
+\author{Willian Paiva \& Nathalie Craeye}
+\date{\today}
+\title{Context-Oriented Programming}
+\hypersetup{
+ pdfauthor={Willian Paiva \& Nathalie Craeye},
+ pdftitle={Context-Oriented Programming},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.1.1 (Org mode 9.0.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+
+\section{Introduction to Context-Oriented Programming}
+\label{sec:orgeb820d5}
+
+\begin{frame}[label={sec:org73a6eee}]{The objective}
+\begin{block}{Simplification and control}
+\begin{itemize}
+\item Make it simpler to take the context in consideration.
+\item Better control over the method selection.
+\item Well define the entities.
+\item Tackle \emph{crosscutting-concerns}.
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}[label={sec:org7e750ad}]{Context and behavior variants}
+COP subdivide the Context into 3 categories:
+\begin{block}{Actor}
+Ex: Function or methods call, messages \ldots{}
+\end{block}
+\begin{block}{Environment}
+Ex: GPS, battery, light sensor \ldots{} 
+\end{block}
+\begin{block}{System}
+Ex: Methods, objects, subsystems \ldots{}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:org0b26612}]{Layers}
+\begin{itemize}
+\item First-class entities
+\item Activation and deactivation
+\begin{itemize}
+\item Arbitrary parts of the code
+\item Conditional (environment)
+\end{itemize}
+\item Scope
+\begin{itemize}
+\item executes the code on the scope in or out the layer
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org542f3c3}]{Multi-dimensional message dispatch}
+\begin{block}{one dimension (Procedural programming)}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./one.jpg}
+\end{center}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgeccb0c2}]{Multi-dimensional message dispatch}
+\begin{block}{two dimension (Object-oriented programming)}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./two.png}
+\end{center}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[label={sec:org6208b74}]{Multi-dimensional message dispatch}
+\begin{block}{three dimension (Subject-oriented programming)}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./three.png}
+\end{center}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile,label={sec:org37669ea}]{Multi-dimensional message dispatch}
+ \begin{block}{four dimension (Context-oriented programming)}
+
+\end{block}
+\end{frame}
+
+\section{Conclusions}
+\label{sec:org9c2276e}
+
+\begin{frame}[label={sec:org460e995}]{Decorator}
+\end{frame}
+\begin{frame}[label={sec:orgf761adb}]{Aspect-oriented programming}
+\end{frame}
+\begin{frame}[label={sec:org9763a31}]{Crosscutting-concerns}
+\end{frame}
+\end{document}

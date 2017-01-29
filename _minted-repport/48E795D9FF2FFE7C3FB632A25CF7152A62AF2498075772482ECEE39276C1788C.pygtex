@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Employer} \PYG{n}{vub} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Employer}\PYG{o}{(}\PYG{l+s}{\PYGZdq{}VUB\PYGZdq{}}\PYG{o}{,}\PYG{l+s}{\PYGZdq{}1050 Brussel\PYGZdq{}}\PYG{o}{);}
+
+\PYG{n}{Person} \PYG{n}{somePersom} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Person}\PYG{o}{(}\PYG{l+s}{\PYGZdq{}Pascal Costanza\PYGZdq{}}\PYG{o}{,}
+                               \PYG{l+s}{\PYGZdq{}1000 Brussel\PYGZdq{}}\PYG{o}{,}
+                                \PYG{n}{vub}\PYG{o}{);}
+
+\PYG{n}{with}\PYG{o}{(}\PYG{n}{Address}\PYG{o}{)\PYGZob{}}
+
+    \PYG{n}{with}\PYG{o}{(}\PYG{n}{Employment}\PYG{o}{)\PYGZob{}}
+        \PYG{n}{System}\PYG{o}{.}\PYG{n+na}{out}\PYG{o}{.}\PYG{n+na}{printls}\PYG{o}{(}\PYG{n}{somePersom}\PYG{o}{);}
+    \PYG{o}{\PYGZcb{}}
+
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

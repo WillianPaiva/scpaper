@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{sound}\PYG{o}{()\PYGZob{}}
+    \PYG{n}{Player} \PYG{n}{playMP3} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Player}\PYG{o}{(}\PYG{k}{new} \PYG{n}{FileInputStream}\PYG{o}{(}\PYG{l+s}{\PYGZdq{}dog.mp3\PYGZdq{}}\PYG{o}{));}
+    \PYG{n}{playMP3}\PYG{o}{.}\PYG{n+na}{play}\PYG{o}{();}
+\PYG{o}{\PYGZcb{}}
+
+\PYG{n}{sound}\PYG{o}{();}
+\end{Verbatim}

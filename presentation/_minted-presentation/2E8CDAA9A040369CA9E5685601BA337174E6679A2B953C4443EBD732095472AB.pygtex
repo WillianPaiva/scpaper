@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Dog}
+\PYG{o}{\PYGZob{}}
+    \PYG{k+kd}{public} \PYG{n+nf}{Dog}\PYG{o}{()\PYGZob{}\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{sound}\PYG{o}{()\PYGZob{}}
+        \PYG{n}{Player} \PYG{n}{playMP3} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Player}\PYG{o}{(}\PYG{k}{new} \PYG{n}{FileInputStream}\PYG{o}{(}\PYG{l+s}{\PYGZdq{}dog.mp3\PYGZdq{}}\PYG{o}{));}
+        \PYG{n}{playMP3}\PYG{o}{.}\PYG{n+na}{play}\PYG{o}{();}
+    \PYG{o}{\PYGZcb{}}
+
+\PYG{o}{\PYGZcb{}}
+
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Cat}
+\PYG{o}{\PYGZob{}}
+    \PYG{k+kd}{public} \PYG{n+nf}{Cat}\PYG{o}{()\PYGZob{}\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{sound}\PYG{o}{()\PYGZob{}}
+        \PYG{n}{Player} \PYG{n}{playMP3} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Player}\PYG{o}{(}\PYG{k}{new} \PYG{n}{FileInputStream}\PYG{o}{(}\PYG{l+s}{\PYGZdq{}Cat.mp3\PYGZdq{}}\PYG{o}{));}
+        \PYG{n}{playMP3}\PYG{o}{.}\PYG{n+na}{play}\PYG{o}{();}
+    \PYG{o}{\PYGZcb{}}
+
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

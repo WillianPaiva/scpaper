@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{hirschfeld2008context}
+Robert Hirschfeld, Pascal Costanza, and Oscar Nierstrasz.
+\newblock Context-oriented programming.
+\newblock {\em Journal of Object Technology}, 7(3), 2008.
+
+\bibitem{appeltauer2011contextj}
+Malte Appeltauer, Robert Hirschfeld, Michael Haupt, and Hidehiko Masuhara.
+\newblock Contextj: Context-oriented programming with java.
+\newblock {\em Information and Media Technologies}, 6(2):399--419, 2011.
+
+\bibitem{dey2001understanding}
+Anind~K Dey.
+\newblock Understanding and using context.
+\newblock {\em Personal and ubiquitous computing}, 5(1):4--7, 2001.
+
+\bibitem{smith1996simple}
+Randall~B Smith and David Ungar.
+\newblock A simple and unifying approach to subjective objects.
+\newblock {\em TAPOS}, 2(3):161--178, 1996.
+
+\bibitem{kiczales1997aspect}
+Gregor Kiczales, John Lamping, Anurag Mendhekar, Chris Maeda, Cristina Lopes,
+  Jean-Marc Loingtier, and John Irwin.
+\newblock Aspect-oriented programming.
+\newblock In {\em European conference on object-oriented programming}, pages
+  220--242. Springer, 1997.
+
+\bibitem{prehofer1997feature}
+Christian Prehofer.
+\newblock Feature-oriented programming: A fresh look at objects.
+\newblock In {\em European Conference on Object-Oriented Programming}, pages
+  419--443. Springer, 1997.
+
+\bibitem{smaragdakis2002mixin}
+Yannis Smaragdakis and Don Batory.
+\newblock Mixin layers: an object-oriented implementation technique for
+  refinements and collaboration-based designs.
+\newblock {\em ACM Transactions on Software Engineering and Methodology
+  (TOSEM)}, 11(2):215--255, 2002.
+
+\end{thebibliography}

@@ -1,0 +1,70 @@
+#+TITLE: Context-Oriented Programming 
+#+AUTHOR: Willian Paiva & Nathalie Craeye
+#+OPTIONS: H:2 toc:t num:t
+#+LATEX_CLASS: beamer
+#+LATEX_CLASS_OPTIONS: [presentation]
+#+LaTeX_HEADER: \usepackage[version=3]{mhchem}
+#+LaTeX_HEADER: \usepackage{minted}
+#+BEAMER_THEME: Madrid
+#+COLUMNS: %45ITEM %10BEAMER_ENV(Env) %10BEAMER_ACT(Act) %4BEAMER_COL(Col) %8BEAMER_OPT(Opt)
+     
+* Introduction to Context-Oriented Programming 
+
+** The objective 
+ 
+*** Simplification and control                                      :B_block:
+    :PROPERTIES:
+    :BEAMER_ENV: block
+    :END:
+    - Make it simpler to take the context in consideration.
+    - Better control over the method selection.
+    - Well define the entities.
+    - Tackle /crosscutting-concerns/.
+
+
+
+** Context and behavior variants
+   COP subdivide the Context into 3 categories:
+*** Actor 
+    Ex: Function or methods call, messages ...
+*** Environment 
+    Ex: GPS, battery, light sensor ... 
+*** System 
+    Ex: Methods, objects, subsystems ...
+
+** Layers
+
+   + First-class entities
+   + Activation and deactivation
+     - Arbitrary parts of the code
+     - Conditional (environment) 
+   + Scope
+     - executes the code on the scope in or out the layer   
+
+** Multi-dimensional message dispatch
+
+*** one dimension (Procedural programming)  
+    [[./one.jpg]]
+
+** Multi-dimensional message dispatch
+
+*** two dimension (Object-oriented programming) 
+    [[./two.png]]
+
+
+** Multi-dimensional message dispatch
+
+*** three dimension (Subject-oriented programming) 
+    [[./three.png]]
+
+** Multi-dimensional message dispatch
+
+*** four dimension (Context-oriented programming)
+    #+BEGIN_SRC java
+    #+END_SRC
+
+* Conclusions
+
+** Decorator 
+** Aspect-oriented programming
+** Crosscutting-concerns 

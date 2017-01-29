@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Dog}\PYG{o}{.}\PYG{n+na}{sound}\PYG{o}{();}
+\PYG{n}{Cat}\PYG{o}{.}\PYG{n+na}{sound}\PYG{o}{();}
+\end{Verbatim}

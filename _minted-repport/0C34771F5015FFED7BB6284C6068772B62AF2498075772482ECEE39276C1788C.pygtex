@@ -1,0 +1,65 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{class} \PYG{n+nc}{Person}\PYG{o}{\PYGZob{}}
+
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{name}\PYG{o}{;}
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{address}\PYG{o}{;}
+    \PYG{k+kd}{private} \PYG{n}{Employer} \PYG{n}{employer}\PYG{o}{;}
+
+    \PYG{n}{Person}\PYG{o}{(}\PYG{n}{String} \PYG{n}{newName}\PYG{o}{,}
+           \PYG{n}{String} \PYG{n}{newAddress}\PYG{o}{,}
+           \PYG{n}{Employer} \PYG{n}{newEmployer}\PYG{o}{)\PYGZob{}}
+
+        \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{name} \PYG{o}{=} \PYG{n}{newName}\PYG{o}{;}
+        \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{address} \PYG{o}{=} \PYG{n}{newAddress}\PYG{o}{;}
+        \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{employer} \PYG{o}{=} \PYG{n}{newEmployer}\PYG{o}{;}
+
+    \PYG{o}{\PYGZcb{}}
+
+    \PYG{n}{String} \PYG{n+nf}{toString}\PYG{o}{()\PYGZob{}}
+        \PYG{k}{return} \PYG{l+s}{\PYGZdq{}Name: \PYGZdq{}}\PYG{o}{+}\PYG{n}{name}\PYG{o}{;}
+    \PYG{o}{\PYGZcb{}}
+
+    \PYG{n}{layer} \PYG{n}{Address} \PYG{o}{\PYGZob{}}
+        \PYG{n}{string} \PYG{n+nf}{toString}\PYG{o}{()\PYGZob{}}
+            \PYG{k}{return} \PYG{n}{proceed}\PYG{o}{()+}
+                \PYG{l+s}{\PYGZdq{}; address: \PYGZdq{}}\PYG{o}{+}
+                \PYG{n}{address}\PYG{o}{;}
+        \PYG{o}{\PYGZcb{}}
+    \PYG{o}{\PYGZcb{}}
+
+    \PYG{n}{layer} \PYG{n}{Employment} \PYG{o}{\PYGZob{}}
+        \PYG{n}{string} \PYG{n+nf}{toString}\PYG{o}{()\PYGZob{}}
+            \PYG{k}{return} \PYG{n}{proceed}\PYG{o}{()+}
+                \PYG{l+s}{\PYGZdq{}; [Employer] \PYGZdq{}}\PYG{o}{+}
+                \PYG{n}{employer}\PYG{o}{;}
+        \PYG{o}{\PYGZcb{}}
+    \PYG{o}{\PYGZcb{}}
+
+\PYG{o}{\PYGZcb{}}
+
+\PYG{k+kd}{class} \PYG{n+nc}{Employer}\PYG{o}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{name}\PYG{o}{;}
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{address}\PYG{o}{;}
+
+    \PYG{n}{Employer}\PYG{o}{(}\PYG{n}{String} \PYG{n}{newName}\PYG{o}{,}
+             \PYG{n}{String} \PYG{n}{newAddress}\PYG{o}{)\PYGZob{}}
+
+        \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{name} \PYG{o}{=} \PYG{n}{newName}\PYG{o}{;}
+        \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{address} \PYG{o}{=} \PYG{n}{newAddress}\PYG{o}{;}
+    \PYG{o}{\PYGZcb{}}
+
+    \PYG{n}{String} \PYG{n+nf}{toString}\PYG{o}{()\PYGZob{}}
+        \PYG{k}{return} \PYG{l+s}{\PYGZdq{}Name: \PYGZdq{}}\PYG{o}{+}\PYG{n}{name}\PYG{o}{;}
+    \PYG{o}{\PYGZcb{}}
+
+    \PYG{n}{layer} \PYG{n}{Address} \PYG{o}{\PYGZob{}}
+        \PYG{n}{string} \PYG{n+nf}{toString}\PYG{o}{()\PYGZob{}}
+            \PYG{k}{return} \PYG{n}{proceed}\PYG{o}{()+}
+                \PYG{l+s}{\PYGZdq{}; address: \PYGZdq{}}\PYG{o}{+}
+                \PYG{n}{address}\PYG{o}{;}
+        \PYG{o}{\PYGZcb{}}
+    \PYG{o}{\PYGZcb{}}
+
+\PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}
