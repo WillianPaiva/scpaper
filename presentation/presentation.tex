@@ -1,4 +1,4 @@
-% Created 2017-01-29 Sun 10:19
+% Created 2017-01-29 Sun 10:51
 % Intended LaTeX compiler: pdflatex
 \documentclass[presentation]{beamer}
 \usepackage[utf8]{inputenc}
@@ -36,9 +36,9 @@
 
 
 \section{Introduction to Context-Oriented Programming}
-\label{sec:orgeb820d5}
+\label{sec:org7ce1743}
 
-\begin{frame}[label={sec:org73a6eee}]{The objective}
+\begin{frame}[label={sec:org0c3eb62}]{The objective}
 \begin{block}{Simplification and control}
 \begin{itemize}
 \item Make it simpler to take the context in consideration.
@@ -51,7 +51,7 @@
 
 
 
-\begin{frame}[label={sec:org7e750ad}]{Context and behavior variants}
+\begin{frame}[label={sec:orgdd9ced6}]{Context and behavior variants}
 COP subdivide the Context into 3 categories:
 \begin{block}{Actor}
 Ex: Function or methods call, messages \ldots{}
@@ -64,7 +64,7 @@ Ex: Methods, objects, subsystems \ldots{}
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:org0b26612}]{Layers}
+\begin{frame}[label={sec:orgb963529}]{Layers}
 \begin{itemize}
 \item First-class entities
 \item Activation and deactivation
@@ -79,7 +79,7 @@ Ex: Methods, objects, subsystems \ldots{}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org542f3c3}]{Multi-dimensional message dispatch}
+\begin{frame}[label={sec:org7de45c8}]{Multi-dimensional message dispatch}
 \begin{block}{one dimension (Procedural programming)}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./one.jpg}
@@ -87,7 +87,7 @@ Ex: Methods, objects, subsystems \ldots{}
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgeccb0c2}]{Multi-dimensional message dispatch}
+\begin{frame}[label={sec:org2ef434c}]{Multi-dimensional message dispatch}
 \begin{block}{two dimension (Object-oriented programming)}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./two.png}
@@ -96,7 +96,7 @@ Ex: Methods, objects, subsystems \ldots{}
 \end{frame}
 
 
-\begin{frame}[label={sec:org6208b74}]{Multi-dimensional message dispatch}
+\begin{frame}[label={sec:orgc1cfd8c}]{Multi-dimensional message dispatch}
 \begin{block}{three dimension (Subject-oriented programming)}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./three.png}
@@ -104,19 +104,56 @@ Ex: Methods, objects, subsystems \ldots{}
 \end{block}
 \end{frame}
 
-\begin{frame}[fragile,label={sec:org37669ea}]{Multi-dimensional message dispatch}
+\begin{frame}[fragile,label={sec:org1906e5f}]{Multi-dimensional message dispatch}
  \begin{block}{four dimension (Context-oriented programming)}
+\begin{minted}[frame=lines,fontsize=\scriptsize]{java}
+class Calculate{
+    Calculate(){};
+    Void HeavyCalc(){ someHeavyCalc();}
+    Layer batWarning {
+        void HeavyCalc(){
+            sendNotification(" Warning Low Battery level");
+            proceed();
+        }
+    }
+    Layer lowMemory {
+        void HeavyCalc(){
+            sendNotification("Not enough memory to execute");
+            throw new NotEnoughtMemoryException();
+        }
+    }
+}
+\end{minted}
+\end{block}
+\end{frame}
 
+
+\begin{frame}[fragile,label={sec:org29b52d5}]{Multi-dimensional message dispatch}
+ \begin{block}{four dimension  cont\ldots{}}
+\begin{minted}[frame=lines,fontsize=\scriptsize]{java}
+Calculate c = new Calculate();
+if(SystemMemory() < mimMem){
+    with(lowMemory){
+        c.HeavyCalc();
+    }
+}else if(BatteryLevel() < mimBat){
+    with(batWarning){
+        c.HeavyCalc();
+    }
+}else{
+    c.HeavyCalc();
+}
+\end{minted}
 \end{block}
 \end{frame}
 
 \section{Conclusions}
-\label{sec:org9c2276e}
+\label{sec:orgd775ea3}
 
-\begin{frame}[label={sec:org460e995}]{Decorator}
+\begin{frame}[label={sec:org1913f01}]{Decorator}
 \end{frame}
-\begin{frame}[label={sec:orgf761adb}]{Aspect-oriented programming}
+\begin{frame}[label={sec:org3c1ff4d}]{Aspect-oriented programming}
 \end{frame}
-\begin{frame}[label={sec:org9763a31}]{Crosscutting-concerns}
+\begin{frame}[label={sec:org384c212}]{Crosscutting-concerns}
 \end{frame}
 \end{document}

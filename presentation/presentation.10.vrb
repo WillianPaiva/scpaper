@@ -1,0 +1,17 @@
+\frametitle{Multi-dimensional message dispatch}
+\begin{block}{four dimension  cont\ldots{}}
+\begin{minted}[frame=lines,fontsize=\scriptsize]{java}
+Calculate c = new Calculate();
+if(SystemMemory() < mimMem){
+    with(lowMemory){
+        c.HeavyCalc();
+    }
+}else if(BatteryLevel() < mimBat){
+    with(batWarning){
+        c.HeavyCalc();
+    }
+}else{
+    c.HeavyCalc();
+}
+\end{minted}
+\end{block}

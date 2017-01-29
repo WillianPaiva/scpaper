@@ -61,6 +61,41 @@
 
 *** four dimension (Context-oriented programming)
     #+BEGIN_SRC java
+    class Calculate{
+        Calculate(){};
+        Void HeavyCalc(){ someHeavyCalc();}
+        Layer batWarning {
+            void HeavyCalc(){
+                sendNotification(" Warning Low Battery level");
+                proceed();
+            }
+        }
+        Layer lowMemory {
+            void HeavyCalc(){
+                sendNotification("Not enough memory to execute");
+                throw new NotEnoughtMemoryException();
+            }
+        }
+    }
+    #+END_SRC
+
+
+** Multi-dimensional message dispatch
+
+*** four dimension  cont...
+    #+BEGIN_SRC java
+    Calculate c = new Calculate();
+    if(SystemMemory() < mimMem){
+        with(lowMemory){
+            c.HeavyCalc();
+        }
+    }else if(BatteryLevel() < mimBat){
+        with(batWarning){
+            c.HeavyCalc();
+        }
+    }else{
+        c.HeavyCalc();
+    }
     #+END_SRC
 
 * Conclusions
