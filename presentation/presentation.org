@@ -102,7 +102,22 @@
 
 ** Crosscutting-concerns 
 
-** Decorator 
+** Decorator pattern
+
+*** Common intents                                      :B_block:
+    :PROPERTIES:
+    :BEAMER_ENV: block
+    :END:
+    - Attach additional responsibilities to an object dynamically.
+    - Can withdrawn responsibilities.
+    - Add behavior or state to individual objects at run-time.
+
+*** One difference                                      :B_block:
+    :PROPERTIES:
+    :BEAMER_ENV: block
+    :END:
+    - Activation and deactivation of the functionnalities of subclasses.
+
 
 ** Aspect-oriented programming
 
@@ -111,6 +126,5 @@
     :BEAMER_ENV: block
     :END:
     - Well define the outer contexts.
-    - Tackle /crosscutting-concerns/.
     - Decrease code scattering by a static way of programming.
     - Be integrated in more and more mainstream languages.
