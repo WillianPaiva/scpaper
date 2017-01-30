@@ -66,7 +66,7 @@ Ex: Methods, objects, subsystems \ldots{}
 
 
 \begin{frame}[label={sec:orgd6e65b4}]{Multi-dimensional message dispatch}
-\begin{block}{one dimension (Procedural programming)}
+\begin{block}{One dimension (Procedural programming)}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./one.jpg}
 \end{center}
@@ -74,7 +74,7 @@ Ex: Methods, objects, subsystems \ldots{}
 \end{frame}
 
 \begin{frame}[label={sec:orge354381}]{Multi-dimensional message dispatch}
-\begin{block}{two dimension (Object-oriented programming)}
+\begin{block}{Two dimensions (Object-oriented programming)}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./two.png}
 \end{center}
@@ -83,7 +83,7 @@ Ex: Methods, objects, subsystems \ldots{}
 
 
 \begin{frame}[label={sec:org58f7b3a}]{Multi-dimensional message dispatch}
-\begin{block}{three dimension (Subject-oriented programming)}
+\begin{block}{Three dimensions (Subject-oriented programming)}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./three.png}
 \end{center}
@@ -92,7 +92,7 @@ Ex: Methods, objects, subsystems \ldots{}
 
 
 \begin{frame}[label={sec:org8d86638}]{Layers}
-\begin{block}{Definitions}
+\begin{block}{Definition}
 \begin{itemize}
 \item First-class entities
 \item Activation and deactivation
@@ -109,19 +109,19 @@ Ex: Methods, objects, subsystems \ldots{}
 \end{frame}
 
 \begin{frame}[fragile,label={sec:orgc7dcc58}]{Multi-dimensional message dispatch}
- \begin{block}{four dimension (Context-oriented programming)}
+ \begin{block}{Four dimensions (Context-oriented programming)}
 \begin{minted}[frame=lines,fontsize=\scriptsize]{java}
 class Calculate{
     Calculate(){};
-    Void HeavyCalc(){ someHeavyCalc();}
+    void heavyCalc(){ someHeavyCalc();}
     Layer batWarning {
-        void HeavyCalc(){
+        void heavyCalc(){
             sendNotification(" Warning Low Battery level");
             proceed();
         }
     }
     Layer lowMemory {
-        void HeavyCalc(){
+        void heavyCalc(){
             sendNotification("Not enough memory to execute");
             throw new NotEnoughtMemoryException();
         }
@@ -133,19 +133,19 @@ class Calculate{
 
 
 \begin{frame}[fragile,label={sec:org7496f79}]{Multi-dimensional message dispatch}
- \begin{block}{four dimension  cont\ldots{}}
+ \begin{block}{Four dimensions  cont\ldots{}}
 \begin{minted}[frame=lines,fontsize=\scriptsize]{java}
 Calculate c = new Calculate();
-if(SystemMemory() < mimMem){
+if(systemMemory() < mimMem){
     with(lowMemory){
-        c.HeavyCalc();
+        c.heavyCalc();
     }
-}else if(BatteryLevel() < mimBat){
+}else if(batteryLevel() < mimBat){
     with(batWarning){
-        c.HeavyCalc();
+        c.heavyCalc();
     }
 }else{
-    c.HeavyCalc();
+    c.heavyCalc();
 }
 \end{minted}
 \end{block}
